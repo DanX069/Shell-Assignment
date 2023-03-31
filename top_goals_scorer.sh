@@ -15,6 +15,9 @@ fi
 # Create or overwrite output file
 > "$2"
 
+# Remove first row of a CSV file using sed command
+sed -i '1d' input.csv
+
 # Sort the input file by goals_overall in descending order
 sort -t',' -k16,16nr "$1" > sorted.csv
 
