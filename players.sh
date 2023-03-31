@@ -15,6 +15,9 @@ fi
 # Create or overwrite output file
 > "$2"
 
+# Remove first row of a CSV file using sed command
+sed -i '1d' input.csv
+
 OLDIFS=$IFS
 IFS=","
 
