@@ -52,4 +52,4 @@ awk -F',' '{
 # Remove the temporary sorted file
 rm sorted.csv
 
-echo "Output file generated successfully."
+echo "Output file generated."
